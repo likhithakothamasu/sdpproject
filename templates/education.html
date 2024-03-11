@@ -1,0 +1,100 @@
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+{% block body %}
+
+<nav class="navbar navbar-expand-sm navbar-light" style="background-color:white; flex-warp:nowrap" >
+
+    <ul class="nav nav-tabs navbar-expand-custom"> <!-- Apply custom class to adjust navbar width -->
+        <li class="nav-item active" style="flex:10;text-align:center;"> <!-- Adding active class here -->
+
+            <a class="nav-link active" aria-current="page" href="{% url 'urgent' %}" style="width:150; height:30;">All</a>
+            <img src="{% static 'images/images.png' %}" width="30" height="40" class="nav-icon" style="display: block; margin: 0 auto;">
+        </li>
+        <li class="nav-item active"> <!-- Adding active class here -->
+            <a class="nav-link active" aria-current="page" href="{% url 'animals' %}" style="width:150; height:30;">Animals</a>
+            <img src="{% static 'images/download.png' %}" width="30" height="40" class="nav-icon" style="display: block; margin: 0 auto;">
+        </li>
+        <li class="nav-item active"> <!-- Adding active class here -->
+            <a class="nav-link active" aria-current="page" href="{% url 'children' %}" style="width:150; height:30;">Children</a>
+            <img src="{% static 'images/likhitha.png' %}" width="30" height="40" class="nav-icon" style="display: block; margin: 0 auto;">
+        </li>
+        <li class="nav-item active"> <!-- Adding active class here -->
+            <a class="nav-link active" aria-current="page" href="{% url 'hungry' %}" style="width:150; height:30;">Hungry</a>
+            <img src="{% static 'images/hung.png' %}" width="30" height="40" class="nav-icon" style="display: block; margin: 0 auto;">
+        </li>
+        <li class="nav-item active"> <!-- Adding active class here -->
+            <a class="nav-link active" aria-current="page" href="{% url 'disability' %}" style="width:150; height:30;">Disability</a>
+            <img src="{% static 'images/dis.png' %}" width="30" height="40" class="nav-icon" style="display: block; margin: 0 auto;">
+        </li>
+        <li class="nav-item active"> <!-- Adding active class here -->
+            <a class="nav-link active" aria-current="page" href="#" style="width:150; height:30;">Medical</a>
+            <img src="{% static 'images/medical.png' %}" width="30" height="30" class="nav-icon" style="display: block; margin: 0 auto;">
+        </li>
+        <li class="nav-item active"> <!-- Adding active class here -->
+            <a class="nav-link active" aria-current="page" href="{% url 'education' %}" style="width:150; height:30;" >Education</a>
+            <img src="{% static 'images/educ.png' %}" width="30" height="50" class="nav-icon"style="display: block; margin: 0 auto;">
+        </li>
+         <li class="nav-item active"> <!-- Adding active class here -->
+            <a class="nav-link active" aria-current="page" href="{% url 'women' %}" style="width:150; height:30;" >Women</a>
+            <img src="{% static 'images/woman.png' %}" width="30" height="50" class="nav-icon"style="display: block; margin: 0 auto;">
+        </li>
+
+    </ul>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <img src="{% static 'images/e2.webp' %}" height="300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><strong>These Kids Deserve The Chance To Live A Better Life, Help Just Sports arena Federation Educate Them
+Tax Benefit
+i
+Education</strong></p>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <span class="badge rounded-circle bg-secondary mr-2">BY</span>
+                        <span>Amma Nanna Anadha Ashramam</span>
+                    </div>
+                    <div class="mt-3"> <!-- Add spacing between the text and buttons -->
+                        <button type="button" class="btn btn-primary mr-2">Share</button>
+                        <button type="button" class="btn btn-secondary">Donate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <img src="{% static 'images/e1.webp' %}" height="300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><strong>Every Child Has The Right To An Education, Give Them That By Supporting Raja Babu Ray</strong></p>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <span class="badge rounded-circle bg-secondary mr-2">BY</span>
+                        <span>Empowering Their Children</span>
+                    </div>
+                    <div class="mt-3"> <!-- Add spacing between the text and buttons -->
+                        <button type="button" class="btn btn-primary mr-2">Share</button>
+                        <button type="button" class="btn btn-secondary">Donate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+</body>
+</html>

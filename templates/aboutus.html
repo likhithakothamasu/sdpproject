@@ -1,0 +1,27 @@
+{% extends 'projectnavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Home Page</title>
+</head>
+<body>
+{% block body %}
+<hr class="mt-0">
+<div class="container-fluid" id="about">
+    <div class="row">
+        <div class="col-lg-6">
+            <img class="" width="600" height="500" src="{% static 'images/image1.jpeg' %}">
+        </div>
+        <div class="col-lg-6">
+            <h2 class="text-center pt- mb-0 text-secondary" style="font-size:30px">About Us</h2>
+            <p class="text-center pt-3 mb-8" style="font-size:35px">
+                This system provides a platform for donors where they can donate things. We collect all donations and redistribute them to poor people.
+            </p>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
